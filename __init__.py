@@ -1,7 +1,7 @@
 from adapt.intent import IntentBuilder
 from mycroft.skills.core import FallbackSkill
 from mycroft.util.format import nice_number
-from mycroft import MycroftSkill, intent_file_handler
+from mycroft import MycroftSkill, intent_handler
 from os.path import dirname, join
 
 from requests.exceptions import (
@@ -461,7 +461,6 @@ class HomeAssistantSkill(FallbackSkill):
         self.speak_dialog('homeassistant.tracker.found',
                           data={'dev_name': dev_name,
                                 'location': dev_location})
-
 
     def _handle_set_thermostat(self, message):
         entity = message.data["entity"]
