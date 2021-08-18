@@ -1,2 +1,1 @@
-(setze|setz|stelle|stell) die Helligkeit von {entity} auf {brightnessvalue} (prozent|%|)
-helligkeit von {entitly} auf {brightnessvalue} (prozent|%|)
+(setze|setz|stelle|stell) die Helligkeit von {{entity}} auf {{brightnessvalue}}%
