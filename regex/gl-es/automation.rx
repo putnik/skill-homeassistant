@@ -1,1 +1,0 @@
-(activar|alternar|chamada) (?P<Entity>.*)
