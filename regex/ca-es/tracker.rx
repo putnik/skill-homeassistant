@@ -1,2 +1,0 @@
-(on està|(on és (la)?)?ubicació de) (?P<Entity>.*)
-(?P<Entity>.*) ubicació

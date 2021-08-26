@@ -1,9 +1,7 @@
-from adapt.intent import IntentBuilder
 from mycroft.skills.core import FallbackSkill
 from mycroft.util.format import nice_number
 from mycroft import MycroftSkill, intent_handler
 
-from os.path import dirname, join
 from sys import exc_info
 
 from requests.exceptions import (
