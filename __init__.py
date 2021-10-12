@@ -507,7 +507,7 @@ class HomeAssistantSkill(FallbackSkill):
             sensor_states = self.translate_namedvalues('homeassistant.binary_sensor.%s' % sensor_state)
             sensor_state = sensor_states['default']
 
-            if attributes.has_key('device_class') and sensor_states.has_key(attributes['device_class']):
+            if ('device_class' in attributes) and (attributes['device_class'] in sensor_states):
                 sensor_state = sensor_states[attributes['device_class']]
 
             self.speak_dialog('homeassistant.sensor.binary_sensor', data={
