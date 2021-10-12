@@ -1,0 +1,26 @@
+default,aus
+battery,normal
+battery_charging,lädt nicht
+cold,normal
+connectivity,nicht verbunden
+door,geschlossen
+garage_door,geschlossen
+gas,kein Gas (clear)
+heat,normal
+light,dunkel
+lock,geschlossen (verschlossen)
+moisture,trocken
+motion,keine Bewegung
+moving,nicht in Bewegung
+occupancy,nicht beschäftigt
+opening,geschlossen
+plug,Gerät ist nicht angeschlossen
+power,no power
+presence,unterwegs
+problem,kein Problem (OKay)
+safety,sicher
+smoke,kein Rauch
+sound,leise
+update,kein Update verfügbar
+vibration,keine Vibration erkannt
+window,geschlossen

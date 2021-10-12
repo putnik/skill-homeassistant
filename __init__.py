@@ -455,7 +455,7 @@ class HomeAssistantSkill(FallbackSkill):
         entity = message.data["Entity"]
         self.log.debug("Entity: %s" % entity)
 
-        ha_entity = self._find_entity(entity, ['climate', 'sensor', 'switch'])
+        ha_entity = self._find_entity(entity, ['climate', 'sensor', 'switch', 'binary_sensor'])
         # Exit if entiti not found or is unavailabe
         if not ha_entity or not self._check_availability(ha_entity):
             return
@@ -503,6 +503,16 @@ class HomeAssistantSkill(FallbackSkill):
                 "value": sensor_state,
                 "current_temp": current_temp,
                 "targeted_temp": target_temp})
+        elif domain == "binary_sensor":
+            sensor_states = self.translate_namedvalues('homeassistant.binary_sensor.%s' % sensor_state)
+            sensor_state = sensor_states['default']
+
+            if attributes.has_key('device_class') and sensor_states.has_key(attributes['device_class']):
+                sensor_state = sensor_states[attributes['device_class']]
+
+            self.speak_dialog('homeassistant.sensor.binary_sensor', data={
+                "dev_name": sensor_name,
+                "value": sensor_state})
         else:
             self.speak_dialog('homeassistant.sensor', data={
                 "dev_name": sensor_name,

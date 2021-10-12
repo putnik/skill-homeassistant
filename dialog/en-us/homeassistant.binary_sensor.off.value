@@ -1,0 +1,26 @@
+default,off
+battery,normal
+battery_charging,not charging
+cold,normal
+connectivity,disconnected
+door,closed
+garage_door,closed
+gas,no gas (clear)
+heat,normal
+light,no light
+lock,closed (locked)
+moisture,no moisture (dry)
+motion,no motion (clear)
+moving,not moving (stopped)
+occupancy,not occupied (clear)
+opening,closed
+plug,device is unplugged
+power,no power
+presence,away
+problem,no problem (OK)
+safety,safe
+smoke,no smoke (clear)
+sound,no sound (clear)
+update,up-to-date
+vibration,no vibration (clear)
+window,closed
