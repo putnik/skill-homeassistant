@@ -184,6 +184,12 @@ class HomeAssistantSkill(FallbackSkill):
         message.data["Entity"] = message.data.get("entity")
         self._handle_sensor(message)
 
+    @intent_handler('binary.sensor.intent')
+    def handle_binary_sensor_intent(self, message):
+        self.log.debug("Turn on intent on entity: "+message.data.get("entity"))
+        message.data["Entity"] = message.data.get("entity")
+        self._handle_sensor(message)
+
     @intent_handler('set.light.brightness.intent')
     def handle_light_set_intent(self, message):
         self.log.debug("Change light intensity: "+message.data.get("entity") \
@@ -507,7 +513,7 @@ class HomeAssistantSkill(FallbackSkill):
             sensor_states = self.translate_namedvalues('homeassistant.binary_sensor.%s' % sensor_state)
             sensor_state = sensor_states['default']
 
-            if ('device_class' in attributes) and (attributes['device_class'] in sensor_states):
+            if attributes.get('device_class') in sensor_states:
                 sensor_state = sensor_states[attributes['device_class']]
 
             self.speak_dialog('homeassistant.sensor.binary_sensor', data={
