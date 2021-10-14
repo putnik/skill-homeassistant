@@ -1,1 +1,1 @@
-(What is|Give me|Tell me) (the|) (temperature|hue|brightness|position|value|state|status|read out) of {Entity} (please|).
+(What is|Give me|Tell me) (the|) (temperature|hue|brightness|value|state|status|read out) of {Entity} (please|).
