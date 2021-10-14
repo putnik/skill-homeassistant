@@ -184,12 +184,6 @@ class HomeAssistantSkill(FallbackSkill):
         message.data["Entity"] = message.data.get("entity")
         self._handle_sensor(message)
 
-    @intent_handler('binary.sensor.intent')
-    def handle_binary_sensor_intent(self, message):
-        self.log.debug("Turn on intent on entity: "+message.data.get("entity"))
-        message.data["Entity"] = message.data.get("entity")
-        self._handle_sensor(message)
-
     @intent_handler('set.light.brightness.intent')
     def handle_light_set_intent(self, message):
         self.log.debug("Change light intensity: "+message.data.get("entity") \
@@ -461,7 +455,7 @@ class HomeAssistantSkill(FallbackSkill):
         entity = message.data["Entity"]
         self.log.debug("Entity: %s" % entity)
 
-        ha_entity = self._find_entity(entity, ['climate', 'sensor', 'switch', 'binary_sensor'])
+        ha_entity = self._find_entity(entity, ['light', 'climate', 'sensor', 'switch', 'binary_sensor'])
         # Exit if entiti not found or is unavailabe
         if not ha_entity or not self._check_availability(ha_entity):
             return
