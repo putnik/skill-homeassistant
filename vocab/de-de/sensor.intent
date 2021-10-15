@@ -1,4 +1,4 @@
-(was ist|wie ist|sag mir) (den|der|) (wert|status) (vom|von dem)  (thermostat|) {entity} (bitte|).
+(was ist|wie ist|sag mir) (den|der|die|das|) (temperatur|farbe|helligkeit|wert|status) (vom|von dem|von) {entity} (bitte|).
 ist (der|die|das|) {entity} (an|aus|niedrig|hoch|kalt|warm|heiß|verbunden|getrennt|offen|zu|verschlossen|geschlossen|hell|dunkel|in bewegung|beschäftigt|angeschlossen|sicher|unsicher|
 hat {entity} (ein|eine|) (feuchtigkeit|energie|problem|vibration|rauch|geräusch) (erkannt|gefunden)
 lädt {entity} (gerade)
