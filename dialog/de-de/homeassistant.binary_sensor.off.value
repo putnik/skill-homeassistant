@@ -6,16 +6,16 @@ cold,normal
 connectivity,nicht verbunden
 door,geschlossen
 garage_door,geschlossen
-gas,kein Gas (clear)
+gas,kein Gas
 heat,normal
 light,dunkel
-lock,geschlossen (verschlossen)
+lock,verschlossen
 moisture,trocken
 motion,keine Bewegung
 moving,nicht in Bewegung
 occupancy,nicht beschäftigt
 opening,geschlossen
-plug,Gerät ist nicht angeschlossen
+plug,nicht angeschlossen
 power,no power
 presence,unterwegs
 problem,kein Problem (OKay)
