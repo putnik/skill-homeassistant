@@ -9,7 +9,7 @@ garage_door,offen
 gas,Gas erkannt
 heat,heiß
 light,hell
-lock,offen (unverschlossen)
+lock,unverschlossen
 moisture,nass
 motion,Bewegung erkannt
 moving,in Bewegung

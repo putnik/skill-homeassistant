@@ -9,8 +9,8 @@ garage_door,open
 gas,gas detected
 heat,hot
 light,light detected
-lock,open (unlocked)
-moisture,moisture detected (wet)
+lock,unlocked
+moisture,moisture detected
 motion,motion detected
 moving,moving
 occupancy,occupied

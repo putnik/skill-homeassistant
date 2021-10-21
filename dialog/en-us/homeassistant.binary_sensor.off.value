@@ -6,22 +6,22 @@ cold,normal
 connectivity,disconnected
 door,closed
 garage_door,closed
-gas,no gas (clear)
+gas,no gas
 heat,normal
 light,no light
-lock,closed (locked)
-moisture,no moisture (dry)
-motion,no motion (clear)
-moving,not moving (stopped)
-occupancy,not occupied (clear)
+lock,locked
+moisture,no moisture
+motion,no motion
+moving,not moving
+occupancy,not occupied
 opening,closed
 plug,device is unplugged
 power,no power
 presence,away
-problem,no problem (OK)
+problem,no problem
 safety,safe
-smoke,no smoke (clear)
-sound,no sound (clear)
+smoke,no smoke
+sound,no sound
 update,up-to-date
-vibration,no vibration (clear)
+vibration,no vibration
 window,closed
