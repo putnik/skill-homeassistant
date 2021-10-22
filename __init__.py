@@ -520,7 +520,7 @@ class HomeAssistantSkill(FallbackSkill):
                 "current_temp": current_temp,
                 "targeted_temp": target_temp})
         elif domain == "binary_sensor":
-            sensor_states = self.translate_namedvalues('homeassistant.binary_sensor.%s' % sensor_state)
+            sensor_states = self.translate_namedvalues('homeassistant.binary_sensor.{sensor_state}')
             sensor_state = sensor_states['default']
 
             if attributes.get('device_class') in sensor_states:
