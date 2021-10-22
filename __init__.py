@@ -476,7 +476,16 @@ class HomeAssistantSkill(FallbackSkill):
         entity = message.data["Entity"]
         self.log.debug("Entity: %s", entity)
 
-        ha_entity = self._find_entity(entity, ['light', 'climate', 'sensor', 'switch', 'binary_sensor'])
+        ha_entity = self._find_entity(
+            entity,
+            [
+                'light',
+                'climate',
+                'sensor',
+                'switch',
+                'binary_sensor'
+            ]
+        )
         # Exit if entiti not found or is unavailabe
 
         if not ha_entity or not self._check_availability(ha_entity):
