@@ -43,12 +43,15 @@ IPV6_REGEX = r"".join(r'((?:[0-9a-fA-F]{1,4}:){1,4}:(?:(?:25[0-5]|(?:2[0-4]|1{0,
                       r':(?:[0-9a-fA-F]{1,4}:){,6}(?:[0-9a-fA-F]{1,4})))')
 
 
-def check_url(ip_address):
+def check_url(ip_address: str) -> str:
     """Function to check if valid url/ip was supplied
 
     First regex check for IPv6.
     If nothing found, second regex try to find IPv4 and domains names.
     """
+    if not ip_address:
+        return
+
     valid = False
     matches = re.findall(IPV6_REGEX, ip_address)
     if matches:

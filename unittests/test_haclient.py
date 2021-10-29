@@ -284,6 +284,7 @@ class TestUrlChecker(TestCase):
     def test_wrong_entry(self):
         """Test regex parsing user inputted url that should fail"""
         test_case = ['',
+                     None,
                      'hi, jack',
                      'None',
                      '192.1.000.1',
